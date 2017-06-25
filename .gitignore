@@ -7,9 +7,8 @@
 /pkg/
 /spec/reports/
 /tmp/
-/ext/fibanachos/fibanachos.h
-/ext/fibanachos/fibanachos.so
+/ext/fibanachos.h
+/ext/fibanachos.so
 # rspec failure tracking
 .rspec_status
-Makefile
 mkmf.log

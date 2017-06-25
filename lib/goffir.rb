@@ -11,16 +11,16 @@ module Goffir
   extend FFI::Library
 
   # Sort of hacky for now... but, ok.
-  begin
-    unless File.exists?('ext/fibanachos/fibanachos.so')
-      `go build -buildmode=c-shared -o ext/fibanachos/fibanachos.so ext/fibanachos/fibanachos.go`
-    end
-  rescue
-    abort "Unable to build go lang extension."
-  end
+  #begin
+  #  unless File.exists?('ext/fibanachos/fibanachos.so')
+  #    `go build -buildmode=c-shared -o ext/fibanachos/fibanachos.so ext/fibanachos/fibanachos.go`
+  #  end
+  #rescue
+  #  abort "Unable to build go lang extension."
+  #end
 
   # This file is required.
-  ffi_lib 'ext/fibanachos/fibanachos.so'
+  ffi_lib 'ext/fibanachos.so'
 
   # Provide a ruby method to a tiny lil' ruby gopher that
   # will eat its way to the desired fibonacci number.
