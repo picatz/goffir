@@ -11,3 +11,5 @@
 /ext/fibanachos/fibanachos.so
 # rspec failure tracking
 .rspec_status
+Makefile
+mkmf.log
