@@ -6,9 +6,18 @@ require 'goffir/purist'
 # @author Kent 'picat' Gruber
 # A little example of how to build Go extensions in Ruby.
 module Goffir
-  
+
   # So that the ffi magic works in our module.
   extend FFI::Library
+
+  # Sort of hacky for now... but, ok.
+  begin
+    unless File.exists?('ext/fibanachos/fibanachos.so')
+      `go build -buildmode=c-shared -o ext/fibanachos/fibanachos.so ext/fibanachos/fibanachos.go`
+    end
+  rescue
+    abort "Unable to build go lang extension."
+  end
 
   # This file is required.
   ffi_lib 'ext/fibanachos/fibanachos.so'

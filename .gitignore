@@ -7,6 +7,7 @@
 /pkg/
 /spec/reports/
 /tmp/
-
+/ext/fibanachos/fibanachos.h
+/ext/fibanachos/fibanachos.so
 # rspec failure tracking
 .rspec_status
