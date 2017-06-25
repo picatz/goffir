@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Kent 'picat' Gruber"]
   spec.email         = ["kgruber1@emich.edu"]
 
-  spec.summary       = %q{An example Ruby gem with a Go Lang extension.}
+  spec.summary       = %q{An example Ruby gem with a Go extension.}
   #spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/picatz/goffir"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
